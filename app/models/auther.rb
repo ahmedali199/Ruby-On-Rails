@@ -1,0 +1,4 @@
+class Auther < ActiveRecord::Base
+	has_many :books
+	validates :name, :presence => true
+end
