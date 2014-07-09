@@ -1,4 +1,4 @@
-class Auther < ActiveRecord::Base
+class Author < ActiveRecord::Base
 	has_many :books
 	validates :name, :presence => true
 end

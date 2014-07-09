@@ -5,13 +5,13 @@ RSpec.describe "books/index", :type => :view do
     assign(:books, [
       Book.create!(
         :name => "Name",
-        :auther_id => 1,
-        :library_id => 2
+        :library_id => 1,
+        :author_id => 2
       ),
       Book.create!(
         :name => "Name",
-        :auther_id => 1,
-        :library_id => 2
+        :library_id => 1,
+        :author_id => 2
       )
     ])
   end

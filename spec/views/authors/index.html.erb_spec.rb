@@ -1,20 +1,20 @@
 require 'rails_helper'
 
-RSpec.describe "authers/index", :type => :view do
+RSpec.describe "authors/index", :type => :view do
   before(:each) do
-    assign(:authers, [
-      Auther.create!(
+    assign(:authors, [
+      Author.create!(
         :name => "Name",
         :DOB => "Dob"
       ),
-      Auther.create!(
+      Author.create!(
         :name => "Name",
         :DOB => "Dob"
       )
     ])
   end
 
-  it "renders a list of authers" do
+  it "renders a list of authors" do
     render
     assert_select "tr>td", :text => "Name".to_s, :count => 2
     assert_select "tr>td", :text => "Dob".to_s, :count => 2

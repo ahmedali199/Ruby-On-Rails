@@ -1,8 +1,8 @@
 require 'rails_helper'
 
-RSpec.describe "authers/show", :type => :view do
+RSpec.describe "authors/show", :type => :view do
   before(:each) do
-    @auther = assign(:auther, Auther.create!(
+    @author = assign(:author, Author.create!(
       :name => "Name",
       :DOB => "Dob"
     ))

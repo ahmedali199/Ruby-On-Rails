@@ -4,8 +4,8 @@ RSpec.describe "books/edit", :type => :view do
   before(:each) do
     @book = assign(:book, Book.create!(
       :name => "MyString",
-      :auther_id => 1,
-      :library_id => 1
+      :library_id => 1,
+      :author_id => 1
     ))
   end
 
@@ -16,9 +16,9 @@ RSpec.describe "books/edit", :type => :view do
 
       assert_select "input#book_name[name=?]", "book[name]"
 
-      assert_select "input#book_auther_id[name=?]", "book[auther_id]"
-
       assert_select "input#book_library_id[name=?]", "book[library_id]"
+
+      assert_select "input#book_author_id[name=?]", "book[author_id]"
     end
   end
 end

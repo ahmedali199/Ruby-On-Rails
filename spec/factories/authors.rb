@@ -1,7 +1,7 @@
 # Read about factories at https://github.com/thoughtbot/factory_girl
 
 FactoryGirl.define do
-  factory :auther do
+  factory :author do
     name "MyString"
     DOB "MyString"
   end

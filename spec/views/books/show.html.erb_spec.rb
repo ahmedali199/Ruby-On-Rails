@@ -4,8 +4,8 @@ RSpec.describe "books/show", :type => :view do
   before(:each) do
     @book = assign(:book, Book.create!(
       :name => "Name",
-      :auther_id => 1,
-      :library_id => 2
+      :library_id => 1,
+      :author_id => 2
     ))
   end
 
